@@ -1218,6 +1218,7 @@ dependencies = [
  "serde_json",
  "sha-1",
  "trust-dns-resolver",
+ "webbrowser",
 ]
 
 [[package]]
@@ -2949,6 +2950,17 @@ checksum = "224b2f6b67919060055ef1a67807367c2066ed520c3862cc013d26cf893a783c"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
+]
+
+[[package]]
+name = "webbrowser"
+version = "0.5.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ecad156490d6b620308ed411cfee90d280b3cbd13e189ea0d3fada8acc89158a"
+dependencies = [
+ "web-sys",
+ "widestring",
+ "winapi",
 ]
 
 [[package]]

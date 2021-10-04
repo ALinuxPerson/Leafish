@@ -18,6 +18,8 @@ pub trait AccountImpl {
     fn refresh(&self, account: Account, token: &str) -> Result<Account, super::Error>;
 
     fn append_head_img_data(&self, account: &mut Account) -> Result<(), super::Error>;
+
+    fn custom_auth(&self) -> Result<Account, super::Error> {}
 }
 
 #[derive(Serialize, Deserialize)]
